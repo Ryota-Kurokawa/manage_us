@@ -6,13 +6,29 @@ void main() {
 }
 
 class ManageUs extends StatelessWidget {
-  const ManageUs({super.key});
+  ManageUs({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Manage Us',
       routerConfig: appRouter,
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+        colorScheme: const ColorScheme(
+          primary: Color.fromARGB(255, 236, 244, 214),
+          secondary: Color.fromARGB(255, 45, 149, 150),
+          surface: Colors.white,
+          background: Color.fromARGB(255, 236, 244, 214),
+          error: Colors.teal,
+          onPrimary: Color.fromARGB(255, 45, 149, 150),
+          onSecondary: Color.fromARGB(255, 38, 80, 115),
+          onSurface: Colors.teal,
+          onBackground: Colors.teal,
+          onError: Colors.teal,
+          brightness: Brightness.light,
+        ),
+      ),
     );
   }
 }
