@@ -13,6 +13,7 @@ class ManageUs extends StatelessWidget {
     return MaterialApp.router(
       title: 'Manage Us',
       routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
         colorScheme: const ColorScheme(

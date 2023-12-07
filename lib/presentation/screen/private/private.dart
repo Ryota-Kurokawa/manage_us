@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:manage_us/presentation/component/manage_appbar.dart';
+import 'package:manage_us/presentation/component/manage_drawer.dart';
 
-class ProfileScreen extends StatelessWidget {
-  ProfileScreen({super.key});
+class PrivateScreen extends StatelessWidget {
+  const PrivateScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HelloWorldApp'),
         centerTitle: true,
         actions: [
           IconButton(icon: Icon(Icons.search), onPressed: () {}),
@@ -17,16 +16,7 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Profile Screen',
-            ),
-          ],
-        ),
-      ),
+      drawer: const ManageDrawer(),
     );
   }
 }
